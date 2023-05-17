@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
+import AddProduct from './Components/AddProduct';
+
 import './App.css';
+
+import ViewProductById from './Components/viewbyid';
+import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import Combined from './Components/Combined';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <>
+
+    <Navbar bg='primary' expand='sm'variant='dark' className='fw fw-bold'>
+      <Container className='navbar'>
+        <Nav className='navbar'><NavLink as={Link} to='/'>Home</NavLink></Nav>
+        
+        <Nav className='navbar'><NavLink as={Link} to='/products'>Product</NavLink></Nav>
+        <Nav className='navbar'><NavLink as={Link} to='/view'>view by Id </NavLink></Nav>
+      </Container>
+    </Navbar>
+    </>
+
+    <Routes>
+      <Route path='/' element={<AddProduct/>}/>
+      <Route path='/products' element={<Combined/> } />
+      <Route path='/view' element={<ViewProductById/>}/>
+    </Routes>
+    
+    
+    
+
+    </BrowserRouter>
   );
 }
 
