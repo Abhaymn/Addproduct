@@ -20,7 +20,7 @@ const AddProduct = () => {
         formData.append('file',file);
 
         try {
-            // Make a POST request to the API endpoint
+        
             const response = await axios.post(
               'https://apitextile.eyeterp.com/product/addproduct',
               formData,
@@ -31,10 +31,9 @@ const AddProduct = () => {
               }
             );
       
-            // Handle the response as needed
             console.log(response.data);
           } catch (error) {
-            // Handle errors
+           
             console.error(error);
           }
 

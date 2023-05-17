@@ -29,6 +29,8 @@ const EditProduct = () => {
         console.error(error);
       }
     };
+
+    
     
   
     return (

@@ -36,7 +36,7 @@ const ViewProduct = () => {
             { data: { _id: productId } }
           );
           console.log(response.data);
-          // Update the product list by removing the deleted product
+         
           setProducts(products.filter((product) => product._id !== productId));
         } catch (error) {
           console.error(error);

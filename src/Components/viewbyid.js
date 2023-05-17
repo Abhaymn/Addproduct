@@ -38,7 +38,7 @@ const ViewProductById = () => {
           <h2>{product.productName}</h2>
           <p>{product.description}</p>
           <p>Price: {product.price}</p>
-          {/* Display other product details as needed */}
+         
         </div>
       )}
     </div>
