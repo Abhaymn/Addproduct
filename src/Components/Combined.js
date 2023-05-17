@@ -8,8 +8,9 @@ const Combined = () => {
       <ViewProduct/>
 
       <EditProduct/>
+      
     </div>
-    
+
   )
 }
 
