@@ -22,6 +22,7 @@ function App() {
         <Nav className='navbar'><NavLink as={Link} to='/view'>view by Id </NavLink></Nav>
       </Container>
     </Navbar>
+    
     </>
 
     <Routes>
@@ -34,7 +35,7 @@ function App() {
     
 
     </BrowserRouter>
-    
+
   );
 }
 

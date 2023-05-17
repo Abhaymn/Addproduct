@@ -62,7 +62,9 @@ const ViewProduct = () => {
         ))}
       </ul>
     </div>
+    
   )
 }
 
 export default ViewProduct
+

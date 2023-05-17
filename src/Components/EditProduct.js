@@ -27,10 +27,12 @@ const EditProduct = () => {
       } catch (error) {
         
         console.error(error);
+    
+
       }
     };
 
-    
+
     
   
     return (

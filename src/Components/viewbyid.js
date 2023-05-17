@@ -12,6 +12,7 @@ const ViewProductById = () => {
         {
           params: {
             _id: productId
+            
           }
         }
       );

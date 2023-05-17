@@ -6,9 +6,10 @@ const Combined = () => {
   return (
     <div>
       <ViewProduct/>
-      
+
       <EditProduct/>
     </div>
+    
   )
 }
 
