@@ -7,8 +7,7 @@ const Combined = () => {
     <div>
       <ViewProduct/>
 
-      <EditProduct/>
-      
+      <EditProduct/> 
     </div>
 
   )

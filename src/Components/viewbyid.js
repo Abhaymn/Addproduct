@@ -6,14 +6,13 @@ const ViewProductById = () => {
   const [product, setProduct] = useState(null);
 
   const viewProductById = async () => {
-    
+
     try {
       const response = await axios.get(
         'https://apitextile.eyeterp.com/product/productViewById',
         {
           params: {
             _id: productId
-
           }
         }
       );

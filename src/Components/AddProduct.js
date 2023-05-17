@@ -77,8 +77,6 @@ const AddProduct = () => {
     </form>
 
     </div>
-    
-  
        
   )
 }

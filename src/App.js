@@ -12,7 +12,7 @@ import Combined from './Components/Combined';
 function App() {
   return (
     <BrowserRouter>
-    
+
     <>
 
     <Navbar bg='primary' expand='sm'variant='dark' className='fw fw-bold'>
@@ -24,7 +24,6 @@ function App() {
       </Container>
 
     </Navbar>
-
     </>
 
     <Routes>

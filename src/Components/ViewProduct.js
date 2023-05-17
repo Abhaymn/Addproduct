@@ -59,13 +59,12 @@ const ViewProduct = () => {
             <button onClick={() => deleteProduct(product._id)}>delete</button>
             
           </li>
-          
+
         ))}
       </ul>
     </div>
 
   )
 }
-
 export default ViewProduct
 
